@@ -1,0 +1,17 @@
+@font-face{
+	font-family: ClassicFont;
+	src:url(Fonts/sourcesans.ttf)
+}
+
+@font-face{
+	font-family: ClassicItalicFont;
+	src:url(Fonts/sourcesansitalic.ttf)
+}
+
+h1, h2, h3, h4, p, a{
+	font-family: ClassicFont;
+}
+
+label, li{
+	font-family: ClassicItalicFont;
+}
