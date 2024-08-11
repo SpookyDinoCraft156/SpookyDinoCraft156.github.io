@@ -1,8 +1,8 @@
 
 
 <script>
-	const server = const server = new WebSocket("ws://98.198.149.156", 1);
-	const client = new WebSocket("ws://98.198.149.156", 2);
+	const server = const server = new WebSocket("wss://websockets/socket1/server.html", 1);
+	const client = new WebSocket("wss://websockets/socket1/client.html", 2);
 	server.onmessage = (svmes) => {
 		console.log(svmes.data)
 	}
