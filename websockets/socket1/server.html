@@ -1,0 +1,8 @@
+<script>
+	const server = new WebSocket("ws://98.198.149.156", 1);
+	server.onmessage = (clmes) => {
+		const client = new WebSocket("ws://98.198.149.156", 2);
+		console.log(clmes.data);
+		client.send("your data sucked");
+	};
+</script>

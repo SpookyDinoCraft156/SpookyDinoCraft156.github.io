@@ -1,0 +1,14 @@
+
+
+<script>
+	const server = const server = new WebSocket("ws://98.198.149.156", 1);
+	const client = new WebSocket("ws://98.198.149.156", 2);
+	server.onmessage = (svmes) => {
+		console.log(svmes.data)
+	}
+	function sendmessage() {
+		server.send("pl1x:0, pl1y:0, spawned:true, forcefield:true, state:normal")
+	}
+</script>
+
+<button type="button" onclick="sendmessage">send message</button>
