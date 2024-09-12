@@ -1,8 +1,0 @@
-<script>
-	const server = new WebSocket("wss://spookydinocraft156.github.io/websockets/socket1/server.html", 1);
-	server.onmessage = (clmes) => {
-		const client = new WebSocket("wss://websockets/socket1/client.html", 2);
-		console.log(clmes.data);
-		client.send("your data sucked");
-	};
-</script>
