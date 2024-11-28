@@ -10,8 +10,10 @@
 
 h1, h2, h3, h4, p, a{
 	font-family: ClassicFont;
+	text-outline: 2px 2px #ffffff;
 }
 
 label, li{
 	font-family: ClassicItalicFont;
+	text-outline: 2px 2px #ffffff;
 }
