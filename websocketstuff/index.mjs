@@ -9,5 +9,6 @@ ws.on('open', function() {
 });
 
 ws.on('message', function message(data) {
-	document.write(<p>data</p>);
+	document.write("<p>data</p>");
+
 };
