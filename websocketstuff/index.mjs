@@ -1,6 +1,6 @@
-import WebSocket from 'ws';
+import WebSocket, { WebSocketServer } from 'ws';
 
-const ws = new WebSocket({port: 53640});
+const ws = new WebSocketServer({port: 53640});
 
 ws.on('error', console.error);
 
@@ -10,4 +10,5 @@ ws.on('open', function() {
 
 ws.on('message', function message(data) {
 	document.write("<p>data</p>");
-};
+});
+
