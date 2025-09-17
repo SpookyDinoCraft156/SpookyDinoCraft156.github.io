@@ -1,0 +1,109 @@
+font-face {
+  font-family: Font;
+  src:url(Roboto-Regular.ttf)
+}
+
+body {
+  background-color: #222222;
+  background-color: linear-gradient(#222222, #0026FF);
+}
+
+h1, h2, h3, h4, h5, h6, p, label, li {
+  font-family: Font;
+  color: #FFFFFF;
+}
+
+div.pholder {
+  padding-top: 0.2%;
+  padding-left: 2%;
+  outline-style:ridge;
+  outline-width:2px;
+  outline-color:#858585;
+  border-radius: 10px;
+  width: 96%;
+  height: auto;
+  background-color: #151515;
+}
+
+div.page {
+  padding-top: 0.2%;
+  padding-left: 2%;
+  outline-style:ridge;
+  outline-width:2px;
+  outline-color:#858585;
+  border-radius: 10px;
+  width: 98%;
+  height: auto;
+  background-color: #151515;
+}
+div.videopage {
+  padding-top: 2%;
+  padding-left: 2%;
+  outline-style:ridge;
+  outline-width:2px;
+  outline-color:#858585;
+  border-radius: 10px;
+  width: 98%;
+  height: auto;
+  background-color: #151515;
+}
+
+div.pholdervid {
+  padding-top: .5%;
+  padding-left: 1%;
+  outline-style:ridge;
+  outline-width:2px;
+  outline-color:#858585;
+  border-radius: 10px;
+  width: 96%;
+  height: auto;
+  background-color: #151515;
+}
+
+p.novideo {
+  text-align: center;
+}
+
+div.topbar {
+  position: sticky;
+}
+
+div.pagebuttons {
+  padding-left: 15px;
+}
+
+img.previewthumb {
+  outline-width: 2px;
+  outline-color: #858585;
+}
+
+div.videoslot {
+  position: absolute;
+  top: 250px;
+  left: 5%;
+  outline-style:ridge;
+  outline-width:2px;
+  outline-color:#858585;
+  border-radius: 10px;
+  width: 240px;
+  height: 200px;
+  padding-bottom: 25px;
+  background-color: #151515;
+}
+
+img.videothumbnail {
+  border-radius: 10px;
+  width: 240px;
+  height: 160px;
+}
+
+video.video {
+  border-radius: 10px;
+  background-color: #000000
+}
+
+div.description {
+  width: 854px;
+  height: 250px;
+  background-color: #121212
+}

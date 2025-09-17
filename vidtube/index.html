@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+  <title>VidTube</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <img src="VidTubeLogo.png" width="256" height="128">
+      <div class="pagebuttons" id="pagebuttons">
+      <button type="button" class="home" onclick="home()">Home</button>
+      <button type="button" class="videos" onclick="videos()">Videos</button>
+      <button type="button" class="upload" onclick="upload()">Upload</button>
+    </div>
+  </div>
+  
+  <div class="page" id="home">
+    <h2>Home<h2>
+    <div class="pholder" id="hhold">
+      <h1 style="text-align: center;">Under Construction</h1>
+    </div>
+  </div>
+
+  <div class="videopage" id="videopage">
+    <video width="854" height="480" src="" class="video" id="watchvideo" controls autoplay></video>
+    <h2 id="videoname">VIDEONAME</h2>
+    <div class="description"><p id="videodesc">VIDEODESC</p></div>
+  </div>
+
+  <div class="page" id="videos">
+    <h2>Videos</h2>
+    <div class="pholder" id="vhold">
+      <p class="novideo" id="novideo">No videos uploaded yet. Be the first to upload!</p>
+      <div class="videoslot" id="videoslot">
+        <img src="default.png" class="videothumbnail" id="videothumbnail">
+        <h5 class="vpagename" id="vpagename">VIDEONAME <button type="button" onclick="fetchvideo('')" id="watchbutton">Watch</button></h5>
+        </div>     
+    </div>
+  </div>
+      
+  <div class="page" id="uploadingvideo">
+    <h2>Upload</h2>
+    <div class="pholder" id="uploading">
+      <p class="novideo">Video is being uploaded. May take awhile depending on the size of the file and the uploading speed.</p>
+      <p class="novideo">You will be sent to the Videos page once finished.</p>
+    </div>
+  </div>
+  
+  <div class="page" id="upload">
+    <h2>Upload<h2>
+    <div class="pholdervid" id="uhold">
+        <h3>Video</h3>
+        <input type="file" accept="video/*" id="filevideo">
+        <h6>Title <input type="text" id="titleup"></h6>
+        <h6>Description <input type="text" id="descup"></h6>
+        <h3>Thumbnail</h3>
+        <h5>If no thumbnail is uploaded, it will automatically be set to the default thumbnail. (This may be changed later.)</h5>
+        <input type="file" accept="image/*" id="filethumb">
+        <p><button type="button" onclick="uploadvideo()">Upload Video</button></p>
+    </div>
+  </div>
+  
+  <p style="text-align:center">Project created by splunkydidnodoo56</p>
+  
+  <script src="script.js"></script>
+</body>
